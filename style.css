@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+
+#main-header {
+    height: 50vh;
+    background-image: url(../image/Nature-bokeh-wallpaper-hd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+}
+#main-header h1 {
+    color: #e6f1f1;
+    text-align: center;
+    font-weight: 400;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    font-size: 3em;
+    text-shadow: #333 1px 1px 1px, #333 2px 2px 1px, #333 3px 3px 1px;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+body {
+    margin: 0;
+    font-family: 'Patua One', cursive;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 0.025em;
+}
+h1 {
+    font-family: 'Patua One', cursive;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.col-8 {
+    width: 66.66%;
+    margin: auto;
+}
+.toggleBox {
+    border: solid 1px darkgray;
+}
+.toggleContent{
+	display: none;
+    overflow: hidden;
+}
+
+.toggleHeader {
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+    background-color: #E8E8E8;
+    padding: 1px;
+    outline: none;
+}
+
+header.toggleHeader::after {
+    content: '\002B';
+    position: absolute;
+    top: 1.3em;
+    right: 1em;
+}
+header.toggleHeader.active::after {
+    content: "\2212";
+}
+
+header.active, header.toggleHeader:hover {
+    background-color: #D8D8D8;
+}
